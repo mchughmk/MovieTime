@@ -1,6 +1,6 @@
 {
   "name": "MovieTime",
-  "app_id": "",
+  "app_id": "517d080e",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
