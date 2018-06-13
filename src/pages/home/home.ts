@@ -6,6 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  textSize: number = 10;
 
   constructor(public navCtrl: NavController) {
 
