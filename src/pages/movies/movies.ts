@@ -9,9 +9,9 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: 'movies.html',
 })
 export class MoviesPage {
-  public myMovies;
+  public movies;
 
   constructor(private http: HttpClient, public navCtrl: NavController, public navParams: NavParams) {
-    this.myMovies = this.http.get('https://api.myjson.com/bins/x5g4x');
+    this.movies = this.http.get('https://api.myjson.com/bins/x5g4x');
   }
 }

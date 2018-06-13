@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Countries</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Country</ion-label>
+      <ion-select interface="popover" #country (ionChange)="changeCountry(country.value)">
+        <ion-option *ngFor="let country of (countries | async)" [value]="country.code">{{ country.name }}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>State</ion-label>
+      <ion-select interface="popover">
+        <ion-option *ngFor="let state of (states | async)" [value]="state.code">{{ state.name }}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>
